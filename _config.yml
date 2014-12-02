@@ -11,3 +11,4 @@ github_username:  MashSoftware
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: [vendor]
