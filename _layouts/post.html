@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="page-header">
-  <h1><i class="fa fa-comment"></i> {{ page.title }} <small>{% if page.author %} by {{ page.author }}{% endif %}{% if page.date %} on {{ page.date | date: "%-d %b %Y" }}{% endif %}</small></h1>
-  <p class="lead">{% if page.meta %}{{ page.meta }}{% endif %}<p>
+  <h1><i class="fa fa-comment"></i> {{ page.title }} <small>{% if page.meta %}{{ page.meta }}{% endif %}</small></h1>
+  <p class="lead">{% if page.author %} by {{ page.author }}{% endif %}{% if page.date %} on {{ page.date | date: "%-d %b %Y" }}{% endif %}</p>
 </div>
 
 {{ content }}
