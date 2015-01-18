@@ -6,4 +6,8 @@ layout: default
   <p class="lead">{% if page.author %} by {{ page.author }}{% endif %}{% if page.date %} on {{ page.date | date: "%-d %b %Y" }}{% endif %}</p>
 </div>
 
-{{ content }}
+<div class="panel panel-default">
+  <div class="panel-body">
+    {{ content }}
+  </div>
+</div>
