@@ -2,7 +2,11 @@
 <html lang="en-GB">
   <head>
     {% include head.html %}
-    <style>{% include css/custom.css %}</style>
+    <style>
+    {% include css/custom.css %}
+    {% include css/syntax.css %}
+    </style>
+    {% seo %}
   </head>
   <body>
     {% include navbar.html %}

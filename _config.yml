@@ -9,6 +9,7 @@ gems:
   - jekyll-sitemap
   - jekyll-mentions
   - jekyll-feed
+  - jekyll-seo-tag
   - jemoji
 
 # Custom settings
