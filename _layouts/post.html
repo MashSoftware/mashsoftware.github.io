@@ -8,9 +8,11 @@ layout: default
         <div class="list-group-item">
           <h5 class="list-group-item-heading"><img class="img-circle pull-left" src="https://avatars2.githubusercontent.com/u/2802973" alt="{{ page.author }}" style="width:50px;height:50px;">{{ page.author }}<br/><small>{{ page.date | date: "%d %B %Y" }} at {{ page.date | date: "%I:%M %p" }}</small></h5>
         </div>
+      {% if page.image %}
       </div>
       <img class="img-responsive" src="{{ page.image }}" alt="Post Image" style="width:100%;height:auto;">
       <div class="list-group">
+      {% endif %}
         <div class="list-group-item">
           {{ content }}
         </div>
