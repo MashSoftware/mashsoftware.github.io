@@ -3,7 +3,7 @@ layout: post
 title:  Rapid prototype versioning
 date:   2016-02-23 22:17:00
 author: Matthew Shaw
-image:
+image:  https://udemy-images.udemy.com/course/750x422/715494_c405_4.jpg
 tags:
 - Prototyping
 - Versioning
@@ -46,6 +46,10 @@ Directory structure:
 My URLs are structured in a [RESTful](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#restful) way, with the addition of the leading `/:version` parameter. My resources here are "applications", where `/applications` is a collection of applications, `/applications/AB1234` is a specific application and `/applications/AB1234/draft` is a draft of application AB1234. Here's the URL routing code for this:
 
 {% highlight javascript %}
+var express = require('express');
+var router = express.Router();
+var fs = require('fs');
+
 router.get('/:version/applications/:application/draft', function (req, res) {
   var version = req.params.version;
   var application = req.params.application;
