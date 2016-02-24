@@ -12,7 +12,7 @@ tags:
 - Express.js
 - Nunjucks
 ---
-As a part of my day job I create prototypes of new services on [GOV.UK](https://www.gov.uk/). We use these as one of the ways to research and learn more about our users' needs. It's a very effective and fast paced way to get a lot of vital feedback early on in the development lifecycle and use it to [iterate quickly and frequently](https://www.gov.uk/design-principles#fifth).
+As a part of my day job I create prototypes of new services on [GOV.UK](https://www.gov.uk/). We use these as one of the ways to research and learn more about the needs users have of government. It's a very effective and fast paced way to get a lot of vital feedback throughout the [service lifecycle](https://www.gov.uk/service-manual/phases) and use it to [iterate quickly and frequently](https://www.gov.uk/design-principles#fifth).
 
 Creating new versions of prototypes whilst preserving your previous versions allows you to see how far you've come, what worked, what didn't and provides documentary evidence of user-centred research, design and development. This is particularly useful information for a [Digital by Default Service Standard](https://www.gov.uk/service-manual/digital-by-default) assessment.
 
