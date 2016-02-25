@@ -59,20 +59,6 @@ layout: default
         <div class="panel panel-default">
           <div class="list-group">
             <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-pencil fa-fw"></i> Other posts</h5>
-            </div>
-            <div class="list-group-item">
-              {% for post in site.posts %}
-              <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="panel panel-default">
-          <div class="list-group">
-            <div class="list-group-item">
               <h5 class="list-group-item-heading"><i class="fa fa-share-alt fa-fw"></i> Social</h5>
             </div>
             <div class="list-group-item">
@@ -81,6 +67,22 @@ layout: default
               data-size="large" target="_blank">
               <i class="fa fa-twitter fa-fw fa-lg"></i> Tweet</a></p>
               <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-primary btn-block"><i class="fa fa-rss fa-fw fa-lg"></i>Subscribe</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="list-group-item-heading"><i class="fa fa-pencil fa-fw"></i> Other posts</h5>
+            </div>
+            <div class="list-group-item">
+              {% for post in site.posts %}
+              <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+              {% endfor %}
             </div>
           </div>
         </div>
