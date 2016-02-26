@@ -18,6 +18,8 @@ Creating new versions of prototypes whilst preserving your previous versions all
 
 Managing multiple versions of prototype code can soon become cumbersome and error prone. Although naming conventions, git branching or tagging and multiple deployment environments can help with this, we need a simple solution. The approach I've developed is to structure your routes to make use of request parameters, such that you [don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and avoid unnecessary duplication of generic routing code. This allows you to focus on what you really want to iterate on; the content, layout and structure of what your users are going to see.
 
+---
+
 #### Example
 
 This is prototype code only, not production-ready, the aim here is to enable rapid change so we can learn as much as possible about our users' experience and interaction with the service.

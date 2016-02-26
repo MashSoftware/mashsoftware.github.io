@@ -10,9 +10,6 @@ nav: true
       <div class="list-group">
         {% for post in site.posts %}
         <div class="list-group-item">
-          {% if post.image %}
-          <img class="pull-left" src="{{ post.image }}" alt="{{ post.title }}" style="width:auto;height:58px;">
-          {% endif %}
           <h4 class="list-group-item-heading"><a href="{{ post.url }}">{{ post.title }}</a> <br/><small>By {{ post.author }} on {{ post.date | date: "%d %B %Y" }} at {{ post.date | date: "%H:%M" }}</small></h4>
         </div>
         {% endfor %}
@@ -21,4 +18,4 @@ nav: true
   </div>
 </div>
 
-<p><i class="fa fa-rss"></i> Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default"><i class="fa fa-rss fa-fw fa-lg"></i> Subscribe</a></p>

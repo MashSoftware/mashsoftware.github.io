@@ -59,14 +59,18 @@ layout: default
         <div class="panel panel-default">
           <div class="list-group">
             <div class="list-group-item">
-              <h5 class="list-group-item-heading"><i class="fa fa-share-alt fa-fw"></i> Social</h5>
+              <h5 class="list-group-item-heading"><i class="fa fa-share-alt fa-fw"></i> Share</h5>
             </div>
             <div class="list-group-item">
-              <p><a class="btn btn-primary btn-block twitter-share-button"
-              href="https://twitter.com/intent/tweet?text={{page.title}}:&url={{site.url}}{{page.url}}&via={{site.twitter_username}}&related=MattShaw85&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
-              data-size="large" target="_blank">
-              <i class="fa fa-twitter fa-fw fa-lg"></i> Tweet</a></p>
-              <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-primary btn-block"><i class="fa fa-rss fa-fw fa-lg"></i>Subscribe</a></p>
+              <a href="https://twitter.com/intent/tweet?text={{page.title}}:&url={{site.url}}{{page.url}}&via={{site.twitter_username}}&related={{site.twitter_related}}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+              rel="nofollow" target="_blank">
+              <i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
+              <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}"
+              rel="nofollow" target="_blank">
+              <i class="fa fa-facebook-square fa-fw fa-3x"></i></a>
+              <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+              rel="nofollow" target="_blank">
+              <i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
             </div>
           </div>
         </div>
