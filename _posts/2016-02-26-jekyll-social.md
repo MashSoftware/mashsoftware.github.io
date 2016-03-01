@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Simple social sharing in Jekyll
+title:  Simple social media in Jekyll
 date:   2016-02-26 12:17:00
 author: Matthew Shaw
 image:  
@@ -13,7 +13,7 @@ tags:
 - Google
 - LinkedIn
 ---
-I wanted to add social media sharing buttons to my [Jekyll](http://jekyllrb.com/) powered blog (this one!) but I didn't want the styling enforced by the various social networks' own buttons, or their inline JavaScript.
+I wanted to add social media share buttons to my [Jekyll](http://jekyllrb.com/) powered blog (this one!) but I didn't want the styling enforced by the various social networks' own buttons, or their inline JavaScript.
 
 I also wanted to turn all the tags on a post into hashtags on a tweet. This was easily achieved by adding the following parameter to the [tweet web intent](https://dev.twitter.com/web/tweet-button/web-intent) URL: {% raw %}```&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}```{% endraw %}
 
