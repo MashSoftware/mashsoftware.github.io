@@ -45,22 +45,22 @@ When I discovered there was an API for e-petitions, my first thoughts were "I be
 #### **Features**
 
 ##### Filter petitions by state:
-![Filter petitions](/assets/mash_petitions_beta_02.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_02.png" alt="Filter petitions" width="400px">
 
 ##### Search full text of petitions:
-![Search petitions](/assets/mash_petitions_beta_03.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_03.png" alt="Search petitions" width="400px">
 
 ##### Make easy comparisons with clear status and progress indicators:
-![Clear status](/assets/mash_petitions_beta_05.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_05.png" alt="Clear status" width="400px">
 
 ##### Interactive maps with fullscreen view:
-![Interactive maps](/assets/mash_petitions_beta_04.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_04.png" alt="Interactive maps" width="400px">
 
 ##### View complete history of a petition:
-![Petition history](/assets/mash_petitions_beta_06.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_06.png" alt="Petition history" width="400px">
 
 ##### Signatures by constituency with MP details and link to their TheyWorkForYou profile:
-![Interactive maps](/assets/mash_petitions_beta_07.png){: width="400px"}
+<img class="img-responsive" src="/assets/mash_petitions_beta_07.png" alt="MP details" width="400px">
 
 #### **Open Beta**
 This is not finished and probably never will be. It's work in progress and driven by user needs. I want to put it out into the hands of the public to see if it works for them and to learn more about their needs. I can then use this feedback in order to iterate and improve it.
