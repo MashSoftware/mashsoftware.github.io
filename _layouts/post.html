@@ -19,6 +19,10 @@ layout: default
               {{ content }}
             </div>
           </div>
+          <div class="panel-footer">
+            <a class="btn btn-default twitter" href="https://twitter.com/intent/follow?screen_name={{site.twitter_related}}" rel="nofollow" target="_blank"><i class="fa fa-twitter fa-fw fa-lg"></i> Follow @{{site.twitter_related}}</a>
+            <a class="btn btn-default twitter" href="https://twitter.com/intent/follow?screen_name={{site.twitter_username}}" rel="nofollow" target="_blank"><i class="fa fa-twitter fa-fw fa-lg"></i> Follow @{{site.twitter_username}}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -27,10 +31,10 @@ layout: default
         <nav>
           <ul class="pager">
             {% if page.previous.url %}
-            <li class="previous"><a href="{{ page.previous.url }}"><i class="fa fa-arrow-left fa-fw"></i> {{ page.previous.title }}</a></li>
+            <li class="previous"><a href="{{ page.previous.url }}"><i class="fa fa-chevron-left fa-fw"></i> {{ page.previous.title }}</a></li>
             {% endif %}
             {% if page.next.url %}
-            <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} <i class="fa fa-arrow-right fa-fw"></i></a></li>
+            <li class="next"><a href="{{ page.next.url }}"> {{ page.next.title }} <i class="fa fa-chevron-right fa-fw"></i></a></li>
             {% endif %}
           </ul>
         </nav>
@@ -62,7 +66,7 @@ layout: default
               <h5 class="list-group-item-heading"><i class="fa fa-share-alt fa-fw"></i> Share</h5>
             </div>
             <div class="list-group-item">
-              <a class="twitter" href="https://twitter.com/intent/tweet?text={{page.title}}:&url={{site.url}}{{page.url}}&via={{site.twitter_username}}&related={{site.twitter_related}}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+              <a class="twitter" href="https://twitter.com/intent/tweet?text={{page.title}} by @{{site.twitter_related}}&url={{site.url}}{{page.url}}&via={{site.twitter_username}}&related={{site.twitter_related}}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
               rel="nofollow" target="_blank">
               <i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
               <a class="facebook" href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}"
