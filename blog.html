@@ -10,7 +10,19 @@ nav: true
       <div class="list-group">
         {% for post in site.posts %}
         <div class="list-group-item">
-          <h4 class="list-group-item-heading"><a href="{{ post.url }}">{{ post.title }}</a> <br/><small>By {{ post.author }} on {{ post.date | date: "%d %B %Y" }} at {{ post.date | date: "%H:%M" }}</small></h4>
+          <div class="media">
+            <div class="media-left">
+              <a href="{{ post.url }}">
+                <img class="media-object" src="{{ post.image }}" alt="{{ post.title }}" width="100" height="auto">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <br/><small>By {{ post.author }} on {{ post.date | date: "%d %B %Y" }} at {{ post.date | date: "%H:%M" }}</small>
+              </h4>
+            </div>
+          </div>
         </div>
         {% endfor %}
       </div>
@@ -18,4 +30,4 @@ nav: true
   </div>
 </div>
 
-<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default"><i class="fa fa-rss fa-fw fa-lg"></i> Subscribe</a></p>
+  <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default"><i class="fa fa-rss fa-fw fa-lg"></i> Subscribe</a></p>
