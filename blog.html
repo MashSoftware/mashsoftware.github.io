@@ -12,9 +12,13 @@ nav: true
         <div class="list-group-item">
           <div class="media">
             <div class="media-left">
+              {% if post.image %}
               <a href="{{ post.url }}">
                 <img class="media-object" src="{{ post.image }}" alt="{{ post.title }}" width="100" height="auto">
               </a>
+              {% else %}
+              <i class="fa fa-comments-o fa-fw fa-5x" style="width:100px;"></i>
+              {% endif %}
             </div>
             <div class="media-body">
               <h4 class="media-heading">
@@ -30,4 +34,4 @@ nav: true
   </div>
 </div>
 
-  <p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default"><i class="fa fa-rss fa-fw fa-lg"></i> Subscribe</a></p>
+<p><a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="btn btn-default"><i class="fa fa-rss fa-fw fa-lg"></i> Subscribe</a></p>
