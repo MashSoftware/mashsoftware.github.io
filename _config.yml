@@ -1,25 +1,42 @@
 # Site settings
 title: Mash Software
-author: Mash Software
 email: hello@mashsoftware.com
 description: Mash Software
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.mashsoftware.com" # the base hostname & protocol for your site
-gems:
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jemoji
+twitter:
+  username: MashSoftware
+facebook:
+  publisher: 352816538231080
+social:
+  links:
+    - https://twitter.com/MashSoftware
+    - https://www.facebook.com/MashSW/
+    - https://github.com/MashSoftware
+lang: en_GB
 
 # Custom settings
-twitter_username: MashSoftware
-twitter_related: MattShaw85
 github_username:  MashSoftware
 github_url: https://github.com/
 github_repo: mashsoftware.github.io
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-exclude: [vendor]
+plugins:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
