@@ -1,0 +1,6 @@
+- name: Blog
+  url: https://medium.com/mash-software
+- name: Products
+  url: /products/
+- name: Contact
+  url: /contact/
