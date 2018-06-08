@@ -2,18 +2,16 @@
     <div class="panel panel-default">
         <div class="list-group">
             <div class="list-group-item">
-                <h5 class="list-group-item-heading">{{product.name}}
-                    <small>{{product.stage}}</small>
-                </h5>
+                <h5 class="list-group-item-heading">{{product.name}}<small>{{product.stage}}</small></h5>
             </div>
             <div class="list-group-item">
                 <p>{{product.description}}</p>
             </div>
         </div>
         <div class="panel-footer">
-            <a class="btn btn-link" href="{{product.url}}" role="button"><i class="fa fa-globe fa-fw fa-lg"></i> Website</a>
-            <a class="btn btn-link" href="{{product.repo}}" role="button"><i class="fa fa-github fa-fw fa-lg"></i> GitHub</a>
-            {% if product.blog %}<a class="btn btn-link" href="{{product.blog}}" role="button"><i class="fa fa-medium fa-fw fa-lg"></i> Blog</a>{% endif %}
+            <a class="btn btn-link" href="{{product.url}}" target="_blank" role="button"><i class="fa fa-globe fa-fw fa-lg"></i> Website</a>
+            <a class="btn btn-link" href="{{product.repo}}" target="_blank" role="button"><i class="fa fa-github fa-fw fa-lg"></i> GitHub</a>
+            {% if product.blog %}<a class="btn btn-link" href="{{product.blog}}" target="_blank" role="button"><i class="fa fa-medium fa-fw fa-lg"></i> Blog</a>{% endif %}
         </div>
     </div>
 </div>
