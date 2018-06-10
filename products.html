@@ -4,8 +4,25 @@ title: Products
 permalink: /products/
 nav: true
 ---
-<div class="row">
-  {% for product in site.data.products %}
-    {% include product.html %}
-  {% endfor %}
-</div>
+
+{% assign count = 0 %}
+{% assign new_row = true %}
+
+{% for product in site.data.products %}
+    {% if new_row == true %}
+    <div class="row">
+    {% assign new_row = false %}
+    {% endif %}
+        <div class="col-md-4">
+            {% include product.html %}
+            <br>
+        </div>
+        {% assign count = count | plus: 1 %}
+        {% if count == 3 or forloop.last %}
+            {% assign new_row = true %}
+        {% endif %}
+    {% if new_row == true %}
+    </div>
+    {% assign count = 0 %}
+    {% endif %}
+{% endfor %}
