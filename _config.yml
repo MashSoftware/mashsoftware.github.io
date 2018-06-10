@@ -3,7 +3,7 @@ title: Mash Software
 email: hello@mashsoftware.com
 description: Digital services, software, web design, development and consultancy.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.mashsoftware.com" # the base hostname & protocol for your site
+url: "https://www.mashsoftware.com" # the base hostname & protocol for your site
 twitter:
   username: MashSoftware
 facebook:
