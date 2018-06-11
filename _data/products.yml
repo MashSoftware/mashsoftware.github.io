@@ -11,10 +11,12 @@
 - name: Mash Petitions
   stage: Closed
   description: Mash Petitions is a digital public service that enables users to explore information about UK government and parliament petitions.
+  img: /img/petitions.png
   repo: https://github.com/MashSoftware/petitions
   blog: https://medium.com/mash-software/mash-petitions-service-74502e06bb71
 - name: Mash Health
   stage: Closed
   description: Mash Health is a digital public service that enables users to find UK healthcare providers.
+  img: /img/health.png
   repo: https://github.com/MashSoftware/health
   blog: https://medium.com/mash-software/mash-health-20d1f0ff248e
