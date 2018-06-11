@@ -1,12 +1,14 @@
 - name: Mash Software
   url: https://www.mashsoftware.com/
   stage: Live
+  img: /img/mash.png
   description: Website to showcase my work with a professional brand and identity.
   repo: https://github.com/MashSoftware/mashsoftware.github.io
 - name: Starlight Creations
   url: http://www.starlightcreations.co.uk/
   stage: Alpha
   description: Professional website for a craft startup that create, sell and rent bespoke art, craft and decorations.
+  img: /img/starlight.png
   repo: https://github.com/MashSoftware/mashsoftware.github.io
 - name: Mash Petitions
   stage: Closed
