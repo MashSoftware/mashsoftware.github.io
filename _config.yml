@@ -1,7 +1,7 @@
 # Site settings
 title: MASH Software
 email: hello@mashsoftware.com
-description: Digital services, software, web design, development and consultancy.
+description: MASH Software is the professional identity of Matthew Shaw, a software developer and designer providing digital service design, development and consultancy based in Plymouth, Devon, UK.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.mashsoftware.com" # the base hostname & protocol for your site
 twitter:
