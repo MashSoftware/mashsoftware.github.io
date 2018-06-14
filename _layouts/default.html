@@ -11,15 +11,14 @@
   {%- seo -%}
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body class="secondary-light">
+  <nav class="navbar navbar-expand-lg navbar-dark primary">
     <div class="container">
-      <a class="navbar-brand" href="/">{{site.title}}</a>
+      <a class="navbar-brand brand" href="/">{{site.title}}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           {%- for p in site.data.nav -%}
@@ -33,11 +32,13 @@
       </div>
     </div>
   </nav>
+  <div class="jumbotron jumbotron-fluid secondary-dark">
+      <div class="container">
+        <h1 class="display-4 terminal"><i class="fas fa-terminal"></i> {{page.title}}</h1>
+        {%- if page.description-%}<p class="lead">{{page.description}}</p>{%- endif -%}
+      </div>
+    </div>
   <div class="container">
-    <h1><span class="fa-stack fa-2x">
-      <i class="far fa-square fa-stack-2x"></i>
-      <i class="fas fa-terminal fa-stack-1x text-primary"></i>
-    </span>{{ page.title }}</h1>
     {{ content }}
   </div>
   <footer class="container">
