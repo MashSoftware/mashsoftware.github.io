@@ -8,7 +8,7 @@
   <link href="//stackpath.bootstrapcdn.com/bootswatch/4.1.1/materia/bootstrap.min.css" rel="stylesheet" integrity="sha384-B7n8QuRe6UtnoLRAwGkku55zwnr4h8whf+ThXUwwlP9SaeNzHlGR4cOOuEZVMYOL" crossorigin="anonymous">
   <link href="//use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="{{ "/css/site.css" | absolute_url }}" rel="stylesheet">
-  {% seo %}
+  {%- seo -%}
 </head>
 
 <body>
@@ -22,13 +22,13 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          {% for p in site.data.nav %}
-          <li class="nav-item {% if p.url == page.url %}active{% endif %}">
-            <a class="nav-link" href="{{p.url}}">{{p.name}} {% if p.url == page.url %}
-              <span class="sr-only">(current)</span>{% endif %}
+          {%- for p in site.data.nav -%}
+          <li class="nav-item {% if p.url == page.url -%}active{%- endif -%}">
+            <a class="nav-link" href="{{p.url}}">{{p.name}} {%- if p.url == page.url -%}
+              <span class="sr-only">(current)</span>{%- endif -%}
             </a>
           </li>
-          {% endfor %}
+          {%- endfor -%}
         </ul>
       </div>
     </div>

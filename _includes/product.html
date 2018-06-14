@@ -1,11 +1,11 @@
 <div class="card">
-    {% if product.img %}<img class="card-img-top" src="{{product.img}}" alt="{{product.name}}">{% endif %}
+    {%- if product.img -%}<img class="card-img-top" src="{{product.img}}" alt="{{product.name}}">{%- endif -%}
     <div class="card-body">
       <h4 class="card-title">{{product.name}}</h4>
       <h6 class="card-subtitle mb-2 text-muted">{{product.stage}}</h6>
       <p class="card-text">{{product.description}}</p>
-      {% if product.url %}<a href="{{product.url}}" class="card-link"><i class="fas fa-external-link-alt fa-fw fa-lg"></i> Link</a>{% endif %}
-      {% if product.repo %}<a href="{{product.repo}}" class="card-link"><i class="fab fa-github fa-fw fa-lg"></i> GitHub</a>{% endif %}
-      {% if product.blog %}<a href="{{product.blog}}" class="card-link"><i class="fab fa-medium fa-fw fa-lg"></i> Blog</a>{% endif %}
+      {%- if product.url -%}<a href="{{product.url}}" class="card-link"><i class="fas fa-external-link-alt fa-fw fa-lg"></i> Link</a>{%- endif -%}
+      {%- if product.repo -%}<a href="{{product.repo}}" class="card-link"><i class="fab fa-github fa-fw fa-lg"></i> GitHub</a>{%- endif -%}
+      {%- if product.blog -%}<a href="{{product.blog}}" class="card-link"><i class="fab fa-medium fa-fw fa-lg"></i> Blog</a>{%- endif -%}
     </div>
 </div>
