@@ -5,9 +5,9 @@
   description: Website to showcase my work with a professional brand and identity.
   repo: https://github.com/MashSoftware/mashsoftware.github.io
 - name: Starlight Creations
-  url: http://www.starlightcreations.co.uk/
-  stage: Alpha
-  description: Professional website for a craft startup that create, sell and rent bespoke art, craft and decorations.
+  url: https://www.starlightcreations.co.uk/
+  stage: Live
+  description: Professional website for a craft startup that create, sell and rent bespoke art, craft and decorations from Dartmoor.
   img: /img/starlight.png
   repo: https://github.com/MashSoftware/mashsoftware.github.io
 - name: Mash Petitions
