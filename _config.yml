@@ -1,22 +1,22 @@
 # Site settings
 title: Mash Software
 email: hello@mashsoftware.com
-description: Digital services, software, web design, development and consultancy.
+description: Digital services designed and developed by Matthew Shaw. Focused on public services, open data, transparency, civil & social good.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.mashsoftware.com" # the base hostname & protocol for your site
 twitter:
   username: MashSoftware
+  card: summary
 facebook:
   publisher: 352816538231080
 social:
+  name: Mash Software
   links:
     - https://twitter.com/MashSoftware
     - https://www.facebook.com/MashSW/
     - https://github.com/MashSoftware
 lang: en_GB
-sass:
-    sass_dir: _sass
-    style: compressed
+locale: en_GB
 
 # Custom settings
 github_username:  MashSoftware
@@ -26,11 +26,8 @@ github_repo: mashsoftware.github.io
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jekyll-feed
   - jekyll-seo-tag
-  - jemoji
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

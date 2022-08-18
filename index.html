@@ -1,16 +1,22 @@
 ---
 layout: default
-title: Mash Software
 ---
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="list-group">
-        <div class="list-group-item">
-          <br/><p class="lead text-center">Mash Software is <a href="http://matthew-shaw.github.io/">Matthew Shaw</a>, a software developer and designer providing digital services, software, web design, development and consultancy based in Plymouth, UK.</p>
-          <p class="lead text-center"><a href="https://medium.com/mash-software">Read my blog.</a> <a href="/products">See what I'm doing.</a> <a href="/contact">Get in touch.</a></p>
-        </div>
-      </div>
+<div class="container-fluid shadow bg-white px-4 py-5 mb-4 text-center">
+  <div class="rounded-4 shadow-lg d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+    <i class="bi bi-code-slash display-1 px-3 py-2"></i>
+  </div>
+  <h1 class="display-5 fw-bold">{{ site.title }}</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Digital services designed and developed by <a href="https://matthew-shaw.github.io/" target="_blank" rel="noopener">Matthew Shaw</a>.<br>Focused on public services, open data, transparency, civil & social good.</p>
+  </div>
+</div>
+<div class="container">
+  <h2>Projects</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for project in site.data.projects %}
+    <div class="col">
+      {% include project.html %}
     </div>
+    {% endfor %}
   </div>
 </div>

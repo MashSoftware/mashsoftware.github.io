@@ -1,0 +1,22 @@
+- name: Mash Time Tracker
+  blog: https://medium.com/mash-software
+  description: Mash Time Tracker provides simple, quick and easy time tracking.
+  icon: bi-clock-history
+  image: /assets/mash_time_tracker.png
+  repo: https://github.com/MashSoftware/time-tracker
+  stage: Beta
+  url: https://time-tracker.mashsoftware.com
+- name: Mash Health
+  blog: https://medium.com/mash-software/mash-health-20d1f0ff248e
+  description: Mash Health helps users to find healthcare providers througout the UK.
+  icon: bi-heart-pulse
+  image: /assets/mash_health.png
+  repo: https://github.com/MashSoftware/health
+  stage: Closed
+- name: Mash Petitions
+  blog: https://medium.com/mash-software/mash-petitions-service-74502e06bb71
+  description: Mash Petitions enables users to explore UK government and parliament petitions.
+  icon: bi-clipboard2-check
+  image: /assets/mash_petitions.png
+  repo: https://github.com/MashSoftware/petitions
+  stage: Closed
