@@ -3,7 +3,7 @@
     <div class="card-body">
         <h4 class="card-title"><i class="bi {{ project.icon }}"></i> {{ project.name }} <small><span class="badge bg-primary">{{ project.stage }}</span></small></h4>
         <p class="card-text lead">{{ project.description }}</p>
-        {% if project.url %}<a href="{{ project.url }}" class="card-link"><i class="bi bi-link"></i> Visit</a>{% endif %}
+        {% if project.url %}<a href="{{ project.url }}" class="card-link"><i class="bi bi-link-45deg"></i> View</a>{% endif %}
         {% if project.repo %}<a href="{{ project.repo }}" class="card-link"><i class="bi bi-github"></i> GitHub</a>{% endif %}
         {% if project.blog %}<a href="{{ project.blog }}" class="card-link"><i class="bi bi-medium"></i> Blog</a>{% endif %}
     </div>  
